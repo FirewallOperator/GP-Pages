@@ -1,12 +1,33 @@
-<html>
-    <head>
-        <title>nondescript login page</title>   
-    </head>
-    <body  style="background-color:rgb(56, 56, 56);">
-        <center><img src="https://precisefp.com/wp-content/uploads/2015/07/form_lock-1.gif" width="300" height="300">
-        <h1 style="color: rgb(184, 184, 184); font-size:35px">Submit your Secret to login</h1>
-        </center>
-    </body>
+  <script>
+    // Customizations - pass in values below.  Used in GlobalProtect login page
+    // and also getsoftwarepage
+    // Change customization of 'GlobalProtect Portal Home Page' to get uniform look
+
+    var favicon = 'https://www.iconsdb.com/icons/preview/red/lock-xxl.png';               // URL to the icon displayed in browser's address bar
+    var logo = 'https://precisefp.com/wp-content/uploads/2015/07/form_lock-1.gif';                  // URL to the company logo
+    var bg_color = '#424241';              // Background color
+    var gp_portal_name = 'submit your secret';        // Text under company logo
+    var gp_portal_name_color = '#c4c4c4';  // Color for text under company logo
+    var error_text_color = '#c4c4c4';      // Text color for logon failure message
+  </script>
+  </head>
+  <body>
+    <div class="loginscreen_logo">
+      <div id="logo">
+        <img src="portal/images/logo-pan-48525a.svg" width="300" height="300" 
+             onerror="this.onerror=null; this.src='portal/images/logo-pan-48525a.png'"
+             alt="">
+      </div>
+      
+      <div id="activearea">
+        <div id="heading">GlobalProtect Portal</div>
+        <div id="formdiv">
+          <pan_form/>
+        </div>
+      </div>
+    </div>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="portal/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
-
-
